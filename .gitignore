@@ -1,0 +1,10 @@
+derby.log
+*.iml
+*.ipr
+*.iws
+target
+.idea
+.sync
+.gradle
+build
+out/

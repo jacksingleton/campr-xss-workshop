@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>XSS Workshop</title>
+
+    <script type="text/javascript" src="/js/jquery-2.1.3.js"></script>
+    <script type="text/javascript" src="/js/handle-submit-invoice.js"></script>
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+
+    <style type="text/css">
+        body {
+            padding-top: 100px;
+            padding-bottom: 40px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 700px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+        }
+
+        button {
+            float: right;
+        }
+
+        hr {
+            border-top: 1px solid #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Submit Invoice</h1>
+
+    <form>
+        <textarea name="invoice"></textarea>
+        <button type="submit" class="btn">Submit Invoice</button>
+    </form>
+
+    <br>
+
+    <h1>Review Invoices</h1>
+
+    <div id="invoices"></div>
+
+</div>
+
+
+</body>
+
+</html>
