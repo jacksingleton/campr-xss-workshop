@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 // TODO: Maybe use this after done writing features?
-import org.owasp.encoder.Encoder;
+import org.owasp.encoder.Encode;
 
 @RestController
 public class InvoiceResource {
