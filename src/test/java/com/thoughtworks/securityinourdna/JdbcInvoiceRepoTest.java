@@ -4,12 +4,11 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.sql.Connection;
-import java.sql.ResultSet;
 import java.util.List;
 
 import static org.junit.Assert.*;
 
-public class InvoiceRepoTest {
+public class JdbcInvoiceRepoTest {
 
     private final ConnectionFactory connectionFactory = new ConnectionFactory();
     private Connection conn;
@@ -22,7 +21,7 @@ public class InvoiceRepoTest {
     @Test
     public void should_allow_saving_and_retrieving_new_invoices() throws Exception {
         // Given
-        final InvoiceRepo repo = new InvoiceRepo(conn);
+        final InvoiceRepo repo = new JdbcInvoiceRepo(conn);
         final String invoiceText = "test invoice test";
 
         // When

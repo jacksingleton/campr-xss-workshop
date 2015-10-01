@@ -17,7 +17,7 @@ public class InjectionWorkshopMain {
     public InvoiceRepo userRepo() {
         try {
             final ConnectionFactory connectionFactory = new ConnectionFactory();
-            final InvoiceRepo userRepo = new InvoiceRepo(connectionFactory.createInMemoryDatabase());
+            final InvoiceRepo userRepo = new JdbcInvoiceRepo(connectionFactory.createInMemoryDatabase());
 
             return userRepo;
         } catch (Exception e) {
