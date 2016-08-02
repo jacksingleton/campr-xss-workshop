@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConnectionFactory {
 
-    private final String databaseDescriptor = "jdbc:derby:memory:" + "injection" + ";create=true";
+    private final String databaseDescriptor = "jdbc:derby:memory:" + "injection" + ";create=true;territory=en_US";
     private final String usersTableSql = "create table invoices (text varchar(255))";
 
     public Connection createInMemoryDatabase() throws SQLException {
